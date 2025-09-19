@@ -1,10 +1,10 @@
-import flask
 import project
 
 
 def main():
     try:
         project.project.run(debug = True)
+        project.load_env()
     except Exception as exception:
         print(exception)
         
