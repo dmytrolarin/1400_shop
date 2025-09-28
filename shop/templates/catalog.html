@@ -16,7 +16,8 @@
     </form>
     {% for product in list_products %}
         <h2>{{product.name}}</h2>
-        <h3>{{product.price}} $</h3>
+        <h3>{{product.price}} грн</h3>
+        <a href="/create-payment?productId={{product.id}}"> Купити </a>
         <hr>
     {% endfor %}
   </body>
